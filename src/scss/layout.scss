@@ -1,0 +1,199 @@
+body {
+    background-color: #eee;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100px;
+    z-index: 1000;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    >div {
+        display: inline-block;
+
+        &.logo {
+            img {
+                width: 200px;
+            }
+        }
+
+        &.nav-menu {
+            a {
+                padding: 10px 40px;
+                color: #fff;
+                position: relative;
+
+                &:not(:last-child) {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 15px;
+                        background-color: #fff;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+
+    .swiper-pagination {
+        left: auto;
+        right: 10%;
+        bottom: 10%;
+        text-align: right;
+
+        .swiper-pagination-bullet {
+            background-color: #ccc;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #fff;
+        }
+    }
+}
+
+.banner-title {
+    z-index: 1000;
+    color: #fff;
+    max-width: 300px;
+    position: absolute;
+    left: 100px;
+    top: 60%;
+    transform: translateY(-60%);
+
+    h1 {
+        margin-bottom: 50px;
+        line-height: 2rem;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+footer {
+    background: url('../images/3.png') no-repeat 100% 100%;
+    padding: 20px 100px;
+
+    .foot-content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .form {
+            width: 50%;
+            color: #fff;
+            padding: 0 10px;
+
+            .title {
+                height: 70px;
+                line-height: 2rem;
+            }
+
+            .content {
+                color: #555;
+                height: calc(100% - 70px);
+                background-color: #fff;
+
+                input,
+                textarea {
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+
+                    &::-webkit-input-placeholder {
+                        color: #ccc;
+                    }
+                }
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
+                input {
+                    width: 48%;
+
+                }
+
+                textarea {
+                    width: 100%;
+                    min-height: 80px;
+                }
+
+                button {
+                    border: 0;
+                    padding: 15px 30px;
+                    background-color: #112a88;
+                    font-size: 1rem;
+                    color: #fff;
+                }
+
+                form,
+                >div {
+                    padding: 50px;
+                }
+            }
+        }
+
+        .foot-right {
+            .content {
+                background-color: #112a88;
+                color: #fff;
+
+                img {
+                    width: 20px;
+                }
+
+                .contus {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    >div {
+                        display: flex;
+                        align-items: center;
+
+                        .icon {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.contact-on {
+            .form {
+                width: 100%;
+            }
+        }
+    }
+
+    .statement {
+        text-align: center;
+        color: #fff;
+        margin-top: 50px;
+    }
+}

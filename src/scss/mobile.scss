@@ -1,0 +1,158 @@
+@media (max-width: 900px) {
+
+    // header
+    .navbar {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+
+        >div {
+            &.logo img {
+                width: 100px;
+            }
+
+            &.nav-menu {
+                a {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .banner .swiper-pagination {
+        bottom: 40px;
+    }
+
+    .banner-title {
+        display: none;
+    }
+
+    // content
+    .advantage {
+        .company {
+            margin-left: 20px;
+
+            .com-info,
+            .com-img {
+                width: 100%;
+            }
+
+            .com-info {
+                div {
+                    padding: 50px;
+                }
+            }
+        }
+
+        .merit {
+            margin-left: 20px;
+            justify-content: center;
+
+            ul {
+                justify-content: center;
+
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .factory-img {
+            ul {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .certificate {
+        .cert-icon {
+            .icon {
+
+                &::before,
+                &::after {
+                    width: 35%;
+                }
+            }
+        }
+    }
+
+    .product {
+        padding: 0 20px;
+    }
+
+    .contact-us {
+        .contact-content {
+            margin: -30px 20px 50px;
+        }
+    }
+
+    // footer
+    footer {
+        padding: 20px;
+
+        .foot-content {
+            .form {
+                padding: 0;
+                width: 100%;
+
+                .content {
+
+                    form,
+                    >div {
+                        padding: 20px;
+                        min-height: 250px;
+                    }
+                }
+
+                &.foot-left {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 774px) {
+    .products .products-img {
+        ul {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .advertisement {
+        padding: 100px 50px;
+    }
+
+    .contact-us {
+        .contact-content {
+            >div {
+                width: 100%;
+                margin: 20px;
+            }
+        }
+    }
+
+    .products {
+        .products-img {
+            margin: -40px 20px 50px;
+        }
+
+        .pagination {
+            margin: 0 20px 50px;
+        }
+    }
+
+    .product-detail {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .product .product-img ul {
+        justify-content: center;
+    }
+}
